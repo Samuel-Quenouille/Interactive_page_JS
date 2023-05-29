@@ -43,3 +43,10 @@ let bootstrap = document.querySelector("head > link")
 navbarBis.addEventListener('dblclick', function() {
     bootstrap.disabled = !bootstrap.disabled;
 });
+
+//Fonctionnalité 6 :
+let cardBis = document.querySelector("body > main > div > div > div > div:nth-child(1) > div")
+let viewButton = document.querySelector("body > main > div > div > div > div:nth-child(1) > div > div > div > div > button.btn.btn-sm.btn-success")
+viewButton.addEventListener('mouseenter', function() {
+    cardBis.classList.toggle("card-text");
+});
